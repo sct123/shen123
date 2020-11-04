@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="guigonge.js"></script>
+<title>九宫格</title>
+<style>
+body{ padding: 30px;
+
+}
+ul,li{ margin:0; padding: 0;}
+li{list-style:none;}
+.wrap{ width: 165px; height: 165px; margin:0 auto; padding: 0 0 5px 5px; overflow: hidden; }
+.wrap li{ width: 50px; height: 50px; line-height: 50px; margin:5px 5px 0 0; text-align: center; background: #f0f0f0; float: left; position:relative;}
+.wrap li div{ width: 50px; height: 50px; display: block; text-decoration: none; background: #ffa600}
+
+.buttonBox{
+	padding: 5px;
+	width: 165px;
+	height: 165px;
+	margin:0 auto;
+	padding: 0px;
+}
+.buttonBox button{
+
+	width: 165px;
+	height: 20px;
+	background-color: #ffffff;
+	border-color: #ffa600;
+	color: #ffa600;
+}
+.buttonBox button:hover{
+
+	
+	background-color: #ffa600;
+	border-color: #ffa600;
+	color: #ffffff;
+
+}
+</style>
+</head>
+<body>
+	<div class="ge">
+		<ul class="wrap" id="wrap" >
+			<li><div class="box"></div></li>
+			<li><div class="box"></div>></li>
+			<li><div class="box"> </div></li>
+			<li><div class="box"></div></li>
+			<li><div class="box"></div></li>
+			<li><div class="box"></div></li>
+			<li><div class="box"></div></li>
+			<li><div class="box"></div></li>
+			<li><div class="box"></div></li>
+</ul>
+	</div>
+	<div class="buttonBox">
+		<button class="button1" onclick="funOn()">开始闪</button>
+		<button class="button2" onclick="funOff()">结束闪</button>
+	</div>
+
+</body>
+</html>
